@@ -1,11 +1,17 @@
+
+/* origin */
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Style Placement</title>
+
 <link rel="stylesheet" href="style.css">
 <style>
+
+    /* origin */
 
     h2 {
       color: red;
@@ -22,3 +28,58 @@
     
     </body>
     </html>
+
+    
+    /* inheritance */
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Inheritance in CSS</title>
+<style>
+body {
+  color: red;
+  text-align: center;
+  font-family: Helvetica;
+}
+p {
+  color: blue;
+}
+</style>
+</head>
+<body>
+<h1>Cascade of CSS Example</h1>
+<h2>Subheading 1</h2>
+<p>Inheritence allows us to write more global styles on parent elements and then "fine-tune" the styles for some of the child elements as needed. Such approach makes writing CSS very efficient.</p>
+<h2 style="color: green;">Subheading 2</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ad excepturi eveniet odio, fuga nam quidem reprehenderit placeat commodi? In laudantium cum nam quod vitae at eligendi consequatur sequi cumque.</p>
+</body>
+</html>
+
+
+   /* specificity */  
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Inheritance in CSS</title>
+<style>
+header.navigation p {
+  color: blue;
+}
+p.blurb {
+  color: red;
+}
+p {
+  color: green !important;
+}
+</style>
+</head>
+<body>
+<header class="navigation">
+  <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero soluta enim aut! Nihil nam obcaecati, fugiat sint sit libero voluptate eos incidunt odio neque cum, dignissimos aperiam, magnam nisi debitis.</p>
+</header>
+</body>
+</html>
