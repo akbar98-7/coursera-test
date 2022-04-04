@@ -1,54 +1,141 @@
 body {
-    font-size: 16px;
-    color: #fff;
-    background-color: #61122f;
-    font-family: 'Oxygen', sans-serif;
+   padding: 0;
+   margin: 0;
+   background-color: #f2f6e9;
 }
 
-#header-nav{
-    background-color: #f6b319;
-    border-radius: 0%;
-    border: 0%;
-    
+.navbar {
+  background: #6ab446;
 }
 
-#logo-img {
-     background: url('../images/restaurant-logo_large.png') no-repeat;
-     width: 150px;
-     height: 150px;
-     margin: 10px 15px 10px 0;
+.nav-link, .navbar-brand {
+  color: #fff;
+  cursor: pointer;
 }
 
-.float-left {
-    float: left;
+.nav-link {
+  margin-right: 1em !important;
 }
 
-.navbar-brand {
-    padding-top: 25px;
-    
-  }
+.nav-link:hover {
+  color: #000;
+}
 
-.navbar-brand h1 { /* Restaurant name */
-    font-family: 'Lora', serif;
-    color: #557c3e;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px #222;
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: .75;
-  }
+.navbar-collapse {
+  justify-content: flex-end;
+}
 
-.navbar-brand a:hover, .navbar-brand a:focus {
-    text-decoration: none;
-  }
-.navbar-brand p { /* Kosher cert */
-    color: #000;
-    text-transform: uppercase;
-    font-size: .7em;
-    margin-top: 15px;
-  }
-.navbar-brand p span { /* Star-K */
-    vertical-align: middle;
-  }
+.header {
+  background-image: url('../images/header-background.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.description {
+  left: 50%;
+  position: absolute;
+  top: 45%;
+  transform: translate(-50%, -55%);
+  text-align: center;
+}
+
+.description h1 {
+  color: #6ab446;
+}
+
+.description p {
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.description button {
+  border: 1px solid #6ab446;
+  background:#6ab446;
+  border-radius: 0;
+  color:#fff;
+}
+
+.description button :hover {
+  border:1px solid #fff;
+  background:#fff;
+  color:#000;
+}
+
+.features {
+  margin: 4em auto;
+  padding: 1em;
+  position: relative;
+}
+
+.feature-title {
+  color: #333;
+  font-size: 1.3rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+  text-transform: uppercase;
+  
+}
+
+.features img {
+ display: block;
+}
+
+ .form-control, .features input {
+  border-radius: 0;
+}
+
+ .btn {
+  background-color: #589b37;
+  border: 1px solid #589b37;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.features .btn:hover {
+  background-color: #333;
+  border: 1px solid #333;
+}
+
+.row {
+ width: 95%;
+ margin: auto;
+}
+
+.background {
+  background: #dedec8;
+  padding: 4em 0;
+}
+
+.team {
+  color: #5e5e55;
+  padding: 0 180px;
+}
+
+.team .card-columns {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+}
+
+.team .card {
+  background: none;
+  border: none;
+}
+
+.team .card-title {
+	font-size: 1.3rem;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
