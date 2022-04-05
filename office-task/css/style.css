@@ -3,7 +3,7 @@ body {
 }
 
 .navbar {
-    background: white;
+    background: wheat;
   }
 
 .nav-link, .navbar-brand {
@@ -19,6 +19,7 @@ body {
 
 .navbar-collapse {
     justify-content: flex-end;
+    
 }
 
 .header {
